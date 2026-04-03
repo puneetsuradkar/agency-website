@@ -1,22 +1,24 @@
-import { Network } from 'lucide-react';
+import { Zap } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="py-8 border-t border-white/5 bg-slate-950 relative overflow-hidden px-6">
-      <div className="container relative z-10">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+    <footer className="py-12 border-t border-white/5 bg-black relative overflow-hidden px-6">
+      <div className="container max-w-6xl mx-auto relative z-10">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-10">
           
-          <div className="flex items-center gap-3">
-            <div className="p-1.5 glass bg-purple-500/10 border-purple-500/20 rounded-lg">
-              <Network className="text-purple-400" size={18} />
+          <div className="flex items-center gap-4">
+            <div className="p-2 glass bg-white/5 border border-white/10 rounded-xl">
+              <Zap className="text-white" size={20} fill="currentColor" strokeWidth={1} />
             </div>
-            <span className="text-lg font-black tracking-[-0.03em] font-heading text-white">
-              Vortex<span className="text-purple-500">Auto</span>
-            </span>
-            <span className="hidden md:block w-px h-4 bg-white/10 mx-2" />
-            <p className="text-[10px] font-bold text-slate-600 uppercase tracking-[0.2em]">
-              © 2026 Systems Optimized
-            </p>
+            <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4 font-heading">
+              <span className="text-xl font-black tracking-tighter text-white">
+                Monolith<span className="text-white/20">Auto</span>
+              </span>
+              <span className="hidden md:block w-px h-4 bg-white/10" />
+              <p className="text-[10px] font-black text-slate-700 uppercase tracking-[0.4em]">
+                © 2026 SYSTEMS OPTIMIZED
+              </p>
+            </div>
           </div>
 
           <div className="flex gap-8 text-[9px] font-bold text-slate-500 uppercase tracking-[0.3em]">
