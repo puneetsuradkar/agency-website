@@ -7,7 +7,6 @@ import Capabilities from './components/Capabilities';
 import Workflow from './components/Workflow';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import Hero3D from './components/Hero3D';
 import Lenis from 'lenis';
 import 'lenis/dist/lenis.css';
 import './App.css';
@@ -33,8 +32,7 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-black selection:bg-purple-500/30 selection:text-white antialiased relative">
-      <Hero3D />
+    <div className="min-h-screen bg-black selection:bg-slate-500/30 selection:text-white antialiased relative">
       <Navbar />
       <main className="relative z-10">
         <Hero />

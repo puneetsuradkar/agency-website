@@ -27,10 +27,9 @@ const Hero = () => {
   } as any;
 
   return (
-    <section className="relative min-h-screen flex items-center pt-32 pb-24 md:pt-48 md:pb-40 overflow-hidden px-6">
+    <section className="relative min-h-screen flex items-center pt-24 pb-16 md:pt-48 md:pb-40 overflow-hidden bg-black px-6">
       {/* Structural Gradients for Monochrome Depth */}
-      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(255,255,255,0.05),transparent_60%)] pointer-events-none" />
+      <div className="absolute top-0 inset-x-0 h-px bg-white/5" />
       
       <div className="container max-w-7xl mx-auto relative z-20">
         <motion.div

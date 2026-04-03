@@ -18,10 +18,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-24 relative overflow-hidden border-t border-white/5">
-      {/* Structural Atmospheric Glows - Monochrome */}
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-white/5 rounded-full blur-[120px] -z-10" />
-      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-white/[0.03] rounded-full blur-[120px] -z-10" />
+    <section id="contact" className="py-24 relative bg-black overflow-hidden border-t border-white/5">
       
       <div className="container max-w-6xl mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-20 items-center">
@@ -81,7 +78,7 @@ const Contact = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             className="relative"
           >
-            <div className="glass-card p-10 md:p-14 border border-white/10 bg-gradient-to-br from-white/[0.03] to-transparent shadow-[0_45px_100px_-20px_rgba(0,0,0,0.8)]">
+            <div className="glass-card p-6 md:p-14 border border-white/10 bg-black shadow-[0_45px_100px_-20px_rgba(0,0,0,0.8)]">
               <div className="mb-10 text-center md:text-left">
                 <h3 className="text-3xl font-black text-white mb-2 font-heading tracking-tight uppercase">Audit Console</h3>
                 <p className="text-[10px] text-slate-600 font-black uppercase tracking-[0.3em]">Initialize Operational Request</p>

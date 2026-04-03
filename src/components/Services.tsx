@@ -53,7 +53,7 @@ const BentoCard = ({ solution, index }: { solution: any, index: number }) => (
     whileInView={{ opacity: 1, scale: 1 }}
     transition={{ duration: 0.8, delay: index * 0.05, ease: [0.25, 1, 0.5, 1] }}
     viewport={{ once: true }}
-    className={`${solution.size} glass-card group cursor-pointer relative p-12 min-h-[350px] flex flex-col justify-between overflow-hidden`}
+    className={`${solution.size} glass-card group cursor-pointer relative p-6 md:p-12 min-h-[300px] md:min-h-[350px] flex flex-col justify-between overflow-hidden bg-black border border-white/10`}
   >
     <div className="absolute inset-0 bg-gradient-to-br from-white/[0.03] to-transparent pointer-events-none" />
     <div className="absolute -right-24 -bottom-24 w-64 h-64 bg-white/[0.03] rounded-full blur-[100px] group-hover:scale-150 transition-transform duration-1000" />
@@ -88,9 +88,7 @@ const BentoCard = ({ solution, index }: { solution: any, index: number }) => (
 
 const Services = () => {
   return (
-    <section id="services" className="py-24 md:py-32 relative overflow-hidden border-t border-white/5">
-      {/* Background Atmosphere */}
-      <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-white/[0.02] rounded-full blur-[150px] -z-10" />
+    <section id="services" className="py-24 md:py-32 relative bg-black overflow-hidden border-t border-white/5">
       
       <div className="container max-w-7xl mx-auto px-6">
         <div className="flex flex-col mb-24 items-center text-center space-y-6">
@@ -118,7 +116,7 @@ const Services = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, ease: [0.25, 1, 0.5, 1] }}
             viewport={{ once: true }}
-            className="col-span-12 glass-card p-12 md:p-16 bg-gradient-to-br from-white/[0.02] to-transparent border border-white/10 flex flex-col md:flex-row justify-between items-center gap-12 group overflow-hidden"
+            className="col-span-12 glass-card p-8 md:p-16 bg-black border border-white/10 flex flex-col md:flex-row justify-between items-center gap-12 group overflow-hidden"
           >
             <div className="relative z-10 text-center md:text-left flex flex-col items-center md:items-start w-full">
               <div className="flex items-center gap-2 mb-4">

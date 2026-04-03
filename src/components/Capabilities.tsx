@@ -30,7 +30,7 @@ const offeringModules = [
 
 const Capabilities = () => {
   return (
-    <section id="capabilities" className="py-24 md:py-32 relative overflow-hidden border-t border-white/5">
+    <section id="capabilities" className="py-24 md:py-32 relative bg-black overflow-hidden border-t border-white/5">
       <div className="container max-w-7xl mx-auto px-6 relative z-10">
         <div className="flex flex-col items-center text-center mb-16 md:mb-24 space-y-6">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[9px] font-black text-white uppercase tracking-[0.3em]">

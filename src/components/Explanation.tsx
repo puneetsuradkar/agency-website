@@ -3,10 +3,7 @@ import { Brain, Blocks, ArrowRight, Zap, Target } from 'lucide-react';
 
 const Explanation = () => {
   return (
-    <section id="explanation" className="py-24 relative overflow-hidden border-t border-white/5">
-      {/* Background Atmosphere */}
-      <div className="absolute top-1/2 left-0 w-[400px] h-[400px] bg-purple-600/5 rounded-full blur-[100px] -z-10 pointer-events-none" />
-      <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-cyan-600/5 rounded-full blur-[100px] -z-10 pointer-events-none" />
+    <section id="explanation" className="py-24 relative bg-black overflow-hidden border-t border-white/5">
       
       <div className="container max-w-6xl mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
