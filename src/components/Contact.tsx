@@ -1,167 +1,79 @@
-import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, ArrowRight, ShieldCheck, Calendar, Sparkles, Building2, User } from 'lucide-react';
+import { ArrowRight, Calendar, PhoneCall } from 'lucide-react';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({ name: '', email: '', query: '' });
-  const [status, setStatus] = useState<'idle' | 'submitting' | 'success'>('idle');
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!formData.name || !formData.email || !formData.query) return;
-    setStatus('submitting');
-    setTimeout(() => {
-      setStatus('success');
-      setFormData({ name: '', email: '', query: '' });
-      setTimeout(() => setStatus('idle'), 4000);
-    }, 1500);
-  };
-
   return (
-    <section id="contact" className="py-24 relative bg-black overflow-hidden border-t border-white/5">
+    <section id="contact" className="section-padding relative bg-black overflow-hidden border-t border-white/5">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_100%,rgba(59,130,246,0.05),transparent_60%)] pointer-events-none" />
       
-      <div className="container max-w-6xl mx-auto px-6 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-20 items-center">
+      <div className="container max-w-7xl mx-auto px-6 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-24 items-center">
           
-          {/* Left Side: Strategic Value Proposition - Monochrome */}
-          <div className="space-y-12">
+          <div className="space-y-12 text-left">
             <div className="space-y-6">
-              <motion.div 
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[9px] font-black text-slate-500 uppercase tracking-[0.4em]"
-              >
-                <Sparkles size={12} className="text-white opacity-40" />
-                Strategic Optimization
-              </motion.div>
+              <div className="inline-flex items-center gap-3 px-3 py-1 rounded-full bg-primary/5 border border-primary/10 text-[9px] font-black text-primary uppercase tracking-[0.4em]">
+                <Calendar size={12} strokeWidth={3} />
+                Strategic Discovery Sync
+              </div>
               <h2 className="text-4xl md:text-7xl font-black font-heading text-white tracking-tighter leading-[1.0] uppercase">
-                Scale Your <br />
-                <span className="text-white/20">Intelligence.</span>
+                Want to Reduce <br />
+                <span className="text-white/20">Workload &</span> <br />
+                Increase Placements?
               </h2>
-              <p className="text-slate-500 text-base md:text-lg leading-relaxed max-w-md italic font-medium">
-                "Infrastructure is the orchestration of autonomous results. We build the architecture for scale."
+              <p className="text-slate-500 text-lg md:text-xl leading-relaxed italic font-medium">
+                "Book a free discovery call and see how automation can transform your recruitment process."
               </p>
             </div>
 
-            <div className="space-y-6">
-              {[
-                { title: 'Workflow Blueprint', desc: 'ROI-driven mapping of your internal ecosystems.', icon: Sparkles },
-                { title: 'Agent Integration', desc: 'Syncing cognitive bots into your structural tech stack.', icon: ShieldCheck }
-              ].map((item, i) => (
-                <div key={i} className="flex gap-4 p-6 glass-card bg-white/[0.01] border-white/5 hover:border-white/20 transition-colors group">
-                  <div className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center text-white/40 group-hover:text-white transition-all">
-                    <item.icon size={20} strokeWidth={1} />
-                  </div>
-                  <div>
-                    <h4 className="text-[11px] font-black text-white uppercase tracking-[0.3em] mb-1 leading-tight">{item.title}</h4>
-                    <p className="text-xs text-slate-600 leading-relaxed font-bold">{item.desc}</p>
-                  </div>
+            <div className="p-8 glass-card bg-primary/5 border border-primary/10 flex items-center justify-between group">
+              <div className="flex items-center gap-6">
+                <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+                  <PhoneCall size={24} />
                 </div>
-              ))}
-            </div>
-
-            <div className="pt-8 border-t border-white/5 flex items-center gap-8">
-              <div className="flex -space-x-3">
-                {[1, 2, 3, 4].map((i) => (
-                  <div key={i} className="w-10 h-10 rounded-full border-2 border-black bg-slate-900 flex items-center justify-center text-[10px] font-black text-white">
-                    {i === 4 ? '+50' : <User size={14} strokeWidth={1} />}
-                  </div>
-                ))}
+                <div className="space-y-1">
+                  <h4 className="text-sm font-black text-white uppercase tracking-widest leading-tight">Short Alignment Call</h4>
+                  <p className="text-[10px] text-slate-500 font-bold uppercase tracking-widest">30 Minutes Discovery Protocol</p>
+                </div>
               </div>
-              <p className="text-[9px] font-black text-slate-700 uppercase tracking-[0.4em]">Trusted Globally</p>
+              <ArrowRight size={24} className="text-primary group-hover:translate-x-2 transition-transform" />
             </div>
+            
+            <p className="text-[9px] font-black text-slate-700 uppercase tracking-[0.4em] pt-8 border-t border-white/5">
+              Secure Architecture Protocol Enabled.
+            </p>
           </div>
 
-          {/* Right Side: The Executive Audit Console - Monochrome */}
           <motion.div
             initial={{ opacity: 0, scale: 0.98 }}
             whileInView={{ opacity: 1, scale: 1 }}
             className="relative"
           >
-            <div className="glass-card p-6 md:p-14 border border-white/10 bg-black shadow-[0_45px_100px_-20px_rgba(0,0,0,0.8)]">
+            <div className="glass-card p-10 md:p-14 border border-white/10 bg-black shadow-[0_45px_100px_-20px_rgba(0,0,0,0.8)]">
               <div className="mb-10 text-center md:text-left">
-                <h3 className="text-3xl font-black text-white mb-2 font-heading tracking-tight uppercase">Audit Console</h3>
+                <h3 className="text-3xl font-black text-white mb-2 font-heading tracking-tight uppercase">Discovery Console</h3>
                 <p className="text-[10px] text-slate-600 font-black uppercase tracking-[0.3em]">Initialize Operational Request</p>
               </div>
 
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-5">
-                  <div className="relative group">
-                    <Building2 className="absolute left-5 top-1/2 -translate-y-1/2 text-slate-800 group-focus-within:text-white transition-colors" size={16} strokeWidth={1} />
-                    <input 
-                      type="text" 
-                      required
-                      placeholder="Company Name"
-                      value={formData.name}
-                      onChange={(e) => setFormData({...formData, name: e.target.value})}
-                      className="w-full bg-white/[0.02] border border-white/10 rounded-xl pl-14 pr-6 py-5 text-[11px] font-bold text-white outline-none focus:border-white/30 transition-all placeholder:text-slate-900 uppercase tracking-widest"
-                    />
-                  </div>
-                  <div className="relative group">
-                    <Mail className="absolute left-5 top-1/2 -translate-y-1/2 text-slate-800 group-focus-within:text-white transition-colors" size={16} strokeWidth={1} />
-                    <input 
-                      type="email" 
-                      required
-                      placeholder="Corporate Email"
-                      value={formData.email}
-                      onChange={(e) => setFormData({...formData, email: e.target.value})}
-                      className="w-full bg-white/[0.02] border border-white/10 rounded-xl pl-14 pr-6 py-5 text-[11px] font-bold text-white outline-none focus:border-white/30 transition-all placeholder:text-slate-900 uppercase tracking-widest"
-                    />
+              <div className="bg-white/5 rounded-2xl border border-white/10 p-1 bg-black overflow-hidden mb-10">
+                <div className="aspect-video flex items-center justify-center text-slate-800 text-center px-10">
+                  <div className="space-y-4">
+                    <Calendar size={48} strokeWidth={1} className="mx-auto text-primary" />
+                    <p className="text-[10px] font-black uppercase tracking-[0.3em] leading-relaxed">
+                      Calendly Integration Module <br />
+                      <span className="text-slate-500 text-[8px] italic">Inject production scheduling script here</span>
+                    </p>
                   </div>
                 </div>
-
-                <div className="relative group">
-                  <textarea 
-                    required
-                    placeholder="Describe specific manual bottlenecks..."
-                    value={formData.query}
-                    onChange={(e) => setFormData({...formData, query: e.target.value})}
-                    className="w-full bg-white/[0.02] border border-white/10 rounded-xl px-6 py-5 text-[11px] font-bold text-white outline-none focus:border-white/30 transition-all min-h-[140px] resize-none placeholder:text-slate-900 uppercase tracking-widest leading-relaxed"
-                  />
-                </div>
-
-                <button 
-                  type="submit" 
-                  disabled={status === 'submitting' || status === 'success'}
-                  className={`w-full py-6 text-[11px] tracking-[0.5em] font-black uppercase flex items-center justify-center gap-4 rounded-full transition-all duration-700 ${
-                    status === 'success' ? 'bg-slate-800 text-white' : 
-                    status === 'submitting' ? 'bg-white/10 text-white/30' : 
-                    'bg-white text-black hover:bg-slate-200 shadow-2xl active:scale-95'
-                  }`}
-                >
-                  {status === 'idle' ? (
-                    <>Initialize Audit Request <ArrowRight size={16} /></>
-                  ) : status === 'submitting' ? (
-                    'Syncing Intelligence...'
-                  ) : (
-                    'Submission Confirmed'
-                  )}
-                </button>
-              </form>
-
-              <div className="my-10 flex items-center gap-6">
-                <div className="h-px bg-white/5 flex-1" />
-                <span className="text-[8px] font-black text-slate-800 uppercase tracking-[0.5em]">OR</span>
-                <div className="h-px bg-white/5 flex-1" />
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-5">
+              <div className="flex flex-col gap-5">
                 <a 
                   href="https://calendly.com" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="flex-1 flex items-center justify-between p-6 glass-card bg-white/[0.01] border border-white/10 hover:border-white/30 transition-all group"
+                  className="btn-primary py-7"
                 >
-                  <div className="flex items-center gap-4">
-                    <div className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center text-white opacity-40">
-                      <Calendar size={18} strokeWidth={1} />
-                    </div>
-                    <div>
-                      <h4 className="text-[9px] font-black text-white uppercase tracking-[0.4em] mb-1">Direct Call</h4>
-                      <p className="text-[8px] text-slate-700 font-black uppercase tracking-[0.4em]">Protocol Sync</p>
-                    </div>
-                  </div>
-                  <ArrowRight size={16} className="text-white opacity-20 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
+                  Book Your Free Call Now <ArrowRight size={18} />
                 </a>
               </div>
             </div>

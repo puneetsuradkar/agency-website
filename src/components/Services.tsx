@@ -1,144 +1,105 @@
 import { motion } from 'framer-motion';
-import { 
-  MessageSquare, Zap, Database, 
-  Search, ArrowUpRight, Bot, Target, ShieldCheck
-} from 'lucide-react';
+import { FileBarChart, Layers, Activity, Sparkles, ArrowUpRight } from 'lucide-react';
 
 const solutions = [
   {
-    title: 'AI Multi-Agent Systems',
-    description: 'Autonomous agents that collaborate to solve complex multi-step business objectives.',
-    icon: Bot,
-    color: '#ffffff',
-    category: 'Workforce',
-    size: 'col-span-12 md:col-span-8'
+    title: 'AI Workflow Audit',
+    description: 'A deep analysis of your recruitment process to identify inefficiencies and automation opportunities.',
+    icon: FileBarChart,
+    color: '#3b82f6',
+    category: 'Analysis Architecture',
+    size: 'col-span-12 lg:col-span-12',
+    includes: ['Workflow analysis', 'Inefficiency identification', 'Automation roadmap', 'ROI calculation', 'Audit report + presentation']
   },
   {
-    title: 'Smart Chatbots',
-    description: 'Next-gen conversational AI that actually solves customer problems in real-time.',
-    icon: MessageSquare,
-    color: '#ffffff',
-    category: 'CX',
-    size: 'col-span-12 md:col-span-4'
+    title: 'Automation Implementation',
+    description: 'We implement the automation systems so your team can start seeing results immediately.',
+    icon: Layers,
+    color: '#3b82f6',
+    category: 'Systems Integration',
+    size: 'col-span-12',
+    includes: ['AI workflow setup', 'Tool integration', 'Automation system design', 'Team training']
   },
   {
-    title: 'Workflow Automation',
-    description: 'End-to-end integration of your entire tech stack with autonomous triggers.',
-    icon: Zap,
-    color: '#ffffff',
-    category: 'Operations',
-    size: 'col-span-12 md:col-span-4'
-  },
-  {
-    title: 'AI Data Employees',
-    description: 'Digital workers that scrape, analyze, and report data 24/7 without error.',
-    icon: Database,
-    color: '#ffffff',
-    category: 'Intelligence',
-    size: 'col-span-12 md:col-span-4'
-  },
-  {
-    title: 'Outbound Agents',
-    description: 'AI sales reps that research, contact, and qualify leads on autopilot.',
-    icon: Search,
-    color: '#ffffff',
-    category: 'Sales',
-    size: 'col-span-12 md:col-span-4'
+    title: 'Ongoing Optimization',
+    description: 'Continuous monitoring and refinement of your automated workflows to maximize ROI.',
+    icon: Activity,
+    color: '#3b82f6',
+    category: 'Intelligence Lifecycle',
+    size: 'col-span-12',
+    includes: ['Workflow improvements', 'Performance tracking', 'Continuous optimization', 'Scale management']
   }
 ];
 
 const BentoCard = ({ solution, index }: { solution: any, index: number }) => (
   <motion.div
-    initial={{ opacity: 0, scale: 0.98 }}
-    whileInView={{ opacity: 1, scale: 1 }}
-    transition={{ duration: 0.8, delay: index * 0.05, ease: [0.25, 1, 0.5, 1] }}
+    initial={{ opacity: 0 }}
+    whileInView={{ opacity: 1 }}
+    transition={{ duration: 1, delay: index * 0.1, ease: [0.22, 1, 0.36, 1] }}
     viewport={{ once: true }}
-    className={`${solution.size} glass-card group cursor-pointer relative p-6 md:p-12 min-h-[300px] md:min-h-[350px] flex flex-col justify-between overflow-hidden bg-black border border-white/10`}
+    className={`${solution.size} glass-card group cursor-pointer relative p-8 md:p-16 flex flex-col lg:flex-row items-center justify-between gap-12 overflow-hidden border border-white/5 hover:border-primary/20 shadow-[0_45px_100px_-20px_rgba(0,0,0,0.8)]`}
   >
-    <div className="absolute inset-0 bg-gradient-to-br from-white/[0.03] to-transparent pointer-events-none" />
-    <div className="absolute -right-24 -bottom-24 w-64 h-64 bg-white/[0.03] rounded-full blur-[100px] group-hover:scale-150 transition-transform duration-1000" />
+    <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(59,130,246,0.03),transparent_60%)] pointer-events-none" />
     
-    <div className="relative z-10 flex flex-col items-center text-center w-full">
-      <div className="flex flex-col items-center mb-8 gap-4">
+    <div className="relative z-10 flex flex-col items-center lg:items-start text-center lg:text-left flex-1 max-w-xl">
+      <div className="flex flex-col items-center lg:items-start mb-8 gap-4">
         <div 
-          className="w-16 h-16 rounded-2xl flex items-center justify-center bg-white/[0.03] border border-white/10 group-hover:bg-white/10 group-hover:border-white/30 transition-all duration-500 shadow-2xl relative"
-          style={{ color: solution.color }}
+          className="w-20 h-20 rounded-2xl flex items-center justify-center bg-primary/5 border border-primary/20 group-hover:bg-primary/10 group-hover:border-primary/40 transition-all duration-700 shadow-2xl relative"
         >
-          <solution.icon size={28} strokeWidth={1} />
+          <solution.icon size={32} strokeWidth={1} className="text-primary" />
         </div>
-        <div className="text-[9px] font-black text-slate-600 uppercase tracking-[0.4em] bg-white/[0.03] px-3 py-1.5 rounded-lg border border-white/5">
+        <div className="text-[10px] font-black text-slate-500 uppercase tracking-[0.4em] bg-white/[0.02] px-4 py-2 rounded-lg border border-white/5">
           {solution.category}
         </div>
       </div>
 
-      <h3 className="text-2xl font-black font-heading mb-4 text-white group-hover:text-slate-200 transition-colors duration-500 uppercase tracking-tighter">
+      <h3 className="text-3xl md:text-5xl font-black font-heading mb-6 text-white group-hover:text-primary transition-colors duration-700 uppercase tracking-tighter">
         {solution.title}
       </h3>
-      <p className="text-sm text-slate-500 leading-relaxed max-w-xs font-medium group-hover:text-white transition-colors duration-500 italic">
+      <p className="text-lg text-slate-400 leading-relaxed font-medium group-hover:text-white transition-colors duration-700 italic mb-8">
         "{solution.description}"
       </p>
+
+      <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3">
+        {solution.includes.map((inc: string, i: number) => (
+          <span key={i} className="px-4 py-2 bg-white/5 rounded-xl border border-white/10 text-[9px] font-black text-slate-500 uppercase tracking-widest group-hover:text-white group-hover:border-white/20 transition-all">
+            {inc}
+          </span>
+        ))}
+      </div>
     </div>
 
-    <div className="relative z-10 pt-8 border-t border-white/5 mt-auto flex items-center justify-center gap-4 text-[10px] font-black uppercase tracking-[0.4em] text-slate-700 group-hover:text-white transition-all duration-500">
-      <span className="group-hover:translate-x-1 transition-transform">Initialize Protocol</span>
-      <ArrowUpRight size={14} className="group-hover:scale-110 group-hover:-translate-y-1 transition-all" />
+    <div className="relative z-10 shrink-0">
+      <a 
+        href="#contact" 
+        onClick={(e) => { e.preventDefault(); document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' }); }}
+        className="px-14 py-7 rounded-full bg-white text-black font-black text-[11px] tracking-[0.4em] uppercase transition-all duration-700 hover:bg-slate-200 hover:scale-105 shadow-2xl flex items-center gap-4"
+      >
+        Request Deployment Proposal <ArrowUpRight size={18} />
+      </a>
     </div>
   </motion.div>
 );
 
 const Services = () => {
   return (
-    <section id="services" className="py-24 md:py-32 relative bg-black overflow-hidden border-t border-white/5">
-      
-      <div className="container max-w-7xl mx-auto px-6">
-        <div className="flex flex-col mb-24 items-center text-center space-y-6">
-          <div className="inline-flex items-center gap-3 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[9px] font-black text-white uppercase tracking-[0.4em]">
-            <Target size={12} />
-            Modular Workforce Archetypes
+    <section id="services" className="section-padding relative bg-black overflow-hidden border-t border-white/5">
+      <div className="container max-w-7xl mx-auto px-6 relative z-10">
+        <div className="flex flex-col mb-32 items-center text-center space-y-6">
+          <div className="inline-flex items-center gap-3 px-3 py-1 rounded-full bg-primary/5 border border-primary/10 text-[9px] font-black text-primary uppercase tracking-[0.4em]">
+            <Sparkles size={12} strokeWidth={3} />
+            Recruitment Operational Matrix
           </div>
-          <h2 className="text-4xl md:text-6xl font-black font-heading text-white tracking-tighter leading-[1.0] uppercase">
-            Digital <span className="text-white/20">Employees.</span> <br />
-            Scale Ready.
+          <h2 className="text-4xl md:text-7xl font-black font-heading text-white tracking-tighter leading-[1.0] uppercase max-w-5xl">
+            Enterprise <span className="text-white/20">Solutions.</span> <br />
+            Built For Recruitment Scale.
           </h2>
-          <p className="text-slate-500 text-lg md:text-xl max-w-2xl leading-relaxed font-medium italic">
-            "Replace complex manual processes with high-performance AI agents. 
-            Modular workforce architecture built for pure efficiency."
-          </p>
         </div>
 
-        <div className="grid grid-cols-12 gap-6">
+        <div className="flex flex-col gap-12">
           {solutions.map((solution, index) => (
             <BentoCard key={solution.title} solution={solution} index={index} />
           ))}
-          
-          <motion.div
-            initial={{ opacity: 0, scale: 0.98 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1, ease: [0.25, 1, 0.5, 1] }}
-            viewport={{ once: true }}
-            className="col-span-12 glass-card p-8 md:p-16 bg-black border border-white/10 flex flex-col md:flex-row justify-between items-center gap-12 group overflow-hidden"
-          >
-            <div className="relative z-10 text-center md:text-left flex flex-col items-center md:items-start w-full">
-              <div className="flex items-center gap-2 mb-4">
-                <ShieldCheck size={16} className="text-white opacity-40" />
-                <span className="text-[9px] font-black text-slate-700 uppercase tracking-[0.4em]">Enterprise Protocol</span>
-              </div>
-              <h3 className="text-3xl md:text-6xl font-black font-heading text-white mb-4 tracking-tighter uppercase leading-[0.9]">
-                Need a <span className="text-white/20">Custom Agent?</span>
-              </h3>
-              <p className="text-slate-500 text-base md:text-lg max-w-xl font-medium italic">
-                We engineer bespoke AI workforce solutions for unique business workflows and high-stakes enterprise demands.
-              </p>
-            </div>
-            
-            <a 
-              href="#contact" 
-              onClick={(e) => { e.preventDefault(); document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' }); }}
-              className="relative z-10 shrink-0 px-14 py-7 rounded-full bg-white text-black font-black text-[11px] tracking-[0.4em] uppercase transition-all duration-500 hover:bg-slate-200 hover:scale-105 shadow-2xl inline-block cursor-pointer"
-            >
-              Request Design Call
-            </a>
-          </motion.div>
         </div>
       </div>
     </section>
