@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion';
-import { ShieldAlert, CheckCircle2, AlertTriangle, FileSearch, Linkedin, Mail, MessageSquare, Calendar, FileText } from 'lucide-react';
+import { ShieldAlert, TriangleAlert, FileSearch, Globe, Mail, MessageSquare, Calendar, FileText } from 'lucide-react';
 
 const ProblemSection = () => {
   const problems = [
     { text: 'Reading hundreds of resumes for every role', icon: FileSearch },
-    { text: 'Searching candidates manually on LinkedIn', icon: Linkedin },
+    { text: 'Searching candidates manually on LinkedIn', icon: Globe },
     { text: 'Sending repetitive outreach messages', icon: Mail },
     { text: 'Following up manually', icon: MessageSquare },
     { text: 'Coordinating interviews across emails and calls', icon: Calendar },
@@ -51,7 +51,7 @@ const ProblemSection = () => {
 
         <div className="mt-20 flex flex-col items-center gap-8 text-center pt-20 border-t border-white/5">
           <div className="flex items-center gap-4 text-red-400 bg-red-500/5 px-6 py-4 rounded-3xl border border-red-500/10">
-            <AlertTriangle size={24} className="shrink-0" />
+            <TriangleAlert size={24} className="shrink-0" />
             <p className="text-lg md:text-xl font-black uppercase tracking-tighter max-w-xl leading-snug">
               Instead of closing placements, your recruiters are stuck doing repetitive admin work.
             </p>

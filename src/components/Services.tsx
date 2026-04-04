@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion';
-import { FileBarChart, Layers, Activity, Sparkles, ArrowUpRight } from 'lucide-react';
+import { FileChartColumn, Layers, Activity, Sparkles, ArrowUpRight } from 'lucide-react';
 
 const solutions = [
   {
     title: 'AI Workflow Audit',
     description: 'A deep analysis of your recruitment process to identify inefficiencies and automation opportunities.',
-    icon: FileBarChart,
+    icon: FileChartColumn,
     color: '#3b82f6',
     category: 'Analysis Architecture',
     size: 'col-span-12 lg:col-span-12',

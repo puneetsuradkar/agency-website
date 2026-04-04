@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
-import { PhoneCall, FileBarChart, Activity, Layers, Rocket, Zap } from 'lucide-react';
+import { PhoneCall, FileChartColumn, Activity, Layers, Rocket, Zap } from 'lucide-react';
 
 const steps = [
   { id: '01', title: 'Discovery Call', desc: 'We understand your recruitment workflow and challenges.', icon: PhoneCall },
-  { id: '02', title: 'Workflow Audit', desc: 'We identify inefficiencies and automation opportunities.', icon: FileBarChart },
+  { id: '02', title: 'Workflow Audit', desc: 'We identify inefficiencies and automation opportunities.', icon: FileChartColumn },
   { id: '03', title: 'AI Strategy Report', desc: 'You receive a clear roadmap with ROI insights.', icon: Activity },
   { id: '04', title: 'Implementation', desc: 'We build and integrate automation systems.', icon: Layers },
   { id: '05', title: 'Optimization', desc: 'We refine workflows and train your team.', icon: Rocket }

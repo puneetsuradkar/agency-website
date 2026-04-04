@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Target, Search, Mail, Calendar, FileText, CheckCircle2 } from 'lucide-react';
+import { Target, Search, Mail, Calendar, FileText, CircleCheck } from 'lucide-react';
 
 const SolutionSection = () => {
   const solutions = [
@@ -17,7 +17,7 @@ const SolutionSection = () => {
       <div className="container max-w-7xl mx-auto px-6 relative z-10">
         <div className="flex flex-col mb-32 items-left md:items-center text-left md:text-center space-y-6">
           <div className="inline-flex items-center gap-3 px-3 py-1 rounded-full bg-primary/5 border border-primary/10 text-[9px] font-black text-primary uppercase tracking-[0.4em]">
-            <CheckCircle2 size={12} strokeWidth={3} />
+            <CircleCheck size={12} strokeWidth={3} />
             The High-Performance Solution
           </div>
           <h2 className="text-4xl md:text-7xl font-black font-heading text-white tracking-tighter leading-[1.0] uppercase max-w-5xl">

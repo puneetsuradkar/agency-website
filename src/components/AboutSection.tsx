@@ -1,5 +1,4 @@
-import { motion } from 'framer-motion';
-import { Target, Search, Layers, UserCircle2 } from 'lucide-react';
+import { Target, Search, Layers, CircleUserRound } from 'lucide-react';
 
 const AboutSection = () => {
   const steps = [
@@ -18,7 +17,7 @@ const AboutSection = () => {
           <div className="space-y-12">
             <div className="space-y-6">
               <div className="inline-flex items-center gap-3 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[9px] font-black text-slate-500 uppercase tracking-[0.4em]">
-                <UserCircle2 size={12} strokeWidth={3} />
+                <CircleUserRound size={12} strokeWidth={3} />
                 Agency Mission Statement
               </div>
               <h2 className="text-4xl md:text-7xl font-black font-heading text-white tracking-tighter leading-[1.0] uppercase">

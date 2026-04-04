@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Sparkles, ArrowRight, Quote } from 'lucide-react';
+import { Sparkles, Quote } from 'lucide-react';
 
 const CaseStudy = () => {
   return (
