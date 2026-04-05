@@ -16,14 +16,14 @@ const AboutSection = () => {
           
           <div className="space-y-12">
             <div className="space-y-6">
-              <div className="inline-flex items-center gap-3 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[9px] font-black text-slate-500 uppercase tracking-[0.4em]">
+              <div className="inline-flex items-center gap-3 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[9px] font-black text-white uppercase tracking-[0.4em]">
                 <CircleUserRound size={12} strokeWidth={3} />
                 Agency Mission Statement
               </div>
               <h2 className="text-4xl md:text-7xl font-black font-heading text-white tracking-tighter leading-[1.0] uppercase">
-                We Architect <br /><span className="text-white/20">Operational</span> <br />Freedom.
+                We Architect <br /><span className="text-white">Operational</span> <br />Freedom.
               </h2>
-              <p className="text-slate-500 text-lg leading-relaxed max-w-xl font-medium italic">
+              <p className="text-white text-lg leading-relaxed max-w-xl font-medium italic">
                 "We specialize in helping recruitment agencies optimize their operations using AI and automation. 
                 Our approach is simple: we convert repetitive manual labor into autonomous logical assets."
               </p>
@@ -46,7 +46,7 @@ const AboutSection = () => {
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.1),transparent_70%)]" />
               <div className="relative z-10 text-center space-y-4">
                 <span className="text-9xl font-black text-white/5 block font-heading">AI</span>
-                <span className="text-[10px] font-black text-slate-700 uppercase tracking-[0.6em]">Systematic Architecture</span>
+                <span className="text-[10px] font-black text-white uppercase tracking-[0.6em]">Systematic Architecture</span>
               </div>
             </div>
           </div>

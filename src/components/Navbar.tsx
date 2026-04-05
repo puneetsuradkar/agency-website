@@ -49,7 +49,7 @@ const Navbar = ({ setView, currentView }: NavbarProps) => {
             <Zap className="text-primary" size={20} fill="currentColor" strokeWidth={1} />
           </div>
           <span className="text-lg md:text-xl font-black tracking-tighter text-white uppercase">
-            RecruitFlow<span className="text-white/20 italic">AI</span>
+            RecruitFlow<span className="text-white italic">AI</span>
           </span>
         </div>
 
@@ -60,7 +60,7 @@ const Navbar = ({ setView, currentView }: NavbarProps) => {
               href={link.href}
               onClick={(e) => handleNavClick(e, link)}
               className={`text-[10px] font-black uppercase tracking-[0.3em] transition-all relative group ${
-                currentView === link.view ? 'text-white' : 'text-slate-500 hover:text-white'
+                currentView === link.view ? 'text-white' : 'text-white hover:text-white'
               }`}
             >
               {link.name}
@@ -94,7 +94,7 @@ const Navbar = ({ setView, currentView }: NavbarProps) => {
                   key={link.name}
                   href={link.href}
                   onClick={(e) => handleNavClick(e, link)}
-                  className={`text-[11px] font-black uppercase tracking-[0.4em] ${currentView === link.view ? 'text-white' : 'text-slate-400 hover:text-white'}`}
+                  className={`text-[11px] font-black uppercase tracking-[0.4em] ${currentView === link.view ? 'text-white' : 'text-white hover:text-white'}`}
                 >
                   {link.name}
                 </a>

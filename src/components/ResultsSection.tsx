@@ -20,7 +20,7 @@ const ResultsSection = () => {
             Quantifiable Architecture
           </div>
           <h2 className="text-4xl md:text-7xl font-black font-heading text-white tracking-tighter leading-[1.0] uppercase max-w-5xl">
-            What This Means <br /><span className="text-white/20">For Your</span> Business Intelligence.
+            What This Means <br /><span className="text-white">For Your</span> Business Intelligence.
           </h2>
         </div>
 
@@ -38,7 +38,7 @@ const ResultsSection = () => {
                 <res.icon size={28} strokeWidth={1} />
               </div>
               <h3 className="text-3xl md:text-5xl font-black text-white mb-4 uppercase tracking-tighter group-hover:text-green-400 transition-colors">{res.title}</h3>
-              <p className="text-[10px] text-slate-500 font-bold uppercase tracking-widest leading-relaxed max-w-[200px]">
+              <p className="text-[10px] text-white font-bold uppercase tracking-widest leading-relaxed max-w-[200px]">
                 {res.desc}
               </p>
             </motion.div>
@@ -51,9 +51,9 @@ const ResultsSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             className="flex items-center gap-8 py-10 border-y border-white/10 w-full justify-center group"
           >
-            <span className="text-lg md:text-2xl lg:text-3xl font-black text-slate-600 uppercase tracking-tighter group-hover:text-white transition-colors">More Efficiency</span>
+            <span className="text-lg md:text-2xl lg:text-3xl font-black text-white uppercase tracking-tighter group-hover:text-white transition-colors">More Efficiency</span>
             <ArrowRightIcon className="text-primary group-hover:scale-150 transition-transform" />
-            <span className="text-lg md:text-2xl lg:text-3xl font-black text-slate-400 uppercase tracking-tighter group-hover:text-white transition-colors">More Placements</span>
+            <span className="text-lg md:text-2xl lg:text-3xl font-black text-white uppercase tracking-tighter group-hover:text-white transition-colors">More Placements</span>
             <ArrowRightIcon className="text-primary group-hover:scale-150 transition-transform" />
             <span className="text-xl md:text-4xl lg:text-5xl font-black text-white uppercase tracking-tighter neon-text">More Revenue</span>
           </motion.div>

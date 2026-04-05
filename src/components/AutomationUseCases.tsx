@@ -57,7 +57,7 @@ const AutomationUseCases = () => {
                 <use.icon size={24} strokeWidth={1} />
               </div>
               <h3 className="text-xl font-black text-white mb-4 uppercase tracking-tighter leading-tight">{use.title}</h3>
-              <p className="text-[10px] text-slate-500 font-bold uppercase tracking-widest leading-relaxed">
+              <p className="text-[10px] text-white font-bold uppercase tracking-widest leading-relaxed">
                 {use.desc}
               </p>
             </motion.div>

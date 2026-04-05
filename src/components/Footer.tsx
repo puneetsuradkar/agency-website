@@ -13,15 +13,15 @@ const Footer = () => {
                 <Zap className="text-primary" size={24} fill="currentColor" strokeWidth={1} />
               </div>
               <span className="text-2xl font-black tracking-tighter text-white uppercase">
-                RecruitFlow<span className="text-white/20 italic">AI</span>
+                RecruitFlow<span className="text-white italic">AI</span>
               </span>
             </div>
-            <p className="max-w-xs text-slate-500 text-sm font-medium text-center md:text-left italic">
+            <p className="max-w-xs text-white text-sm font-medium text-center md:text-left italic">
               "Architecting autonomous recruitment ecosystems for high-growth agencies. Operational efficiency redefined."
             </p>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-12 text-[10px] font-black text-slate-600 uppercase tracking-[0.4em]">
+          <div className="flex flex-wrap justify-center gap-12 text-[10px] font-black text-white uppercase tracking-[0.4em]">
             <div className="flex flex-col gap-4">
               <span className="text-white mb-2 tracking-[0.6em]">Navigation</span>
               <a href="#problem" className="hover:text-primary transition-colors">Problem</a>
@@ -38,7 +38,7 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
-          <div className="flex items-center gap-6 text-[9px] font-black text-slate-700 uppercase tracking-[0.4em]">
+          <div className="flex items-center gap-6 text-[9px] font-black text-white uppercase tracking-[0.4em]">
             <span>© 2026 SYSTEMS OPTIMIZED</span>
             <span className="hidden md:block w-px h-3 bg-white/10" />
             <span>HQ: GLOBAL OPERATIONS</span>

@@ -19,7 +19,7 @@ const WhyChooseUs = () => {
             The Strategic Advantage
           </div>
           <h2 className="text-4xl md:text-7xl font-black font-heading text-white tracking-tighter leading-[1.0] uppercase max-w-5xl">
-            Why Agencies <br /><span className="text-white/20">Trust Our</span> Protocol.
+            Why Agencies <br /><span className="text-white">Trust Our</span> Protocol.
           </h2>
         </div>
 
@@ -37,7 +37,7 @@ const WhyChooseUs = () => {
                 <res.icon size={24} strokeWidth={1} />
               </div>
               <h3 className="text-xl font-black text-white mb-4 uppercase tracking-tighter leading-tight">{res.title}</h3>
-              <p className="text-[10px] text-slate-500 font-bold uppercase tracking-widest leading-relaxed">
+              <p className="text-[10px] text-white font-bold uppercase tracking-widest leading-relaxed">
                 {res.desc}
               </p>
             </motion.div>

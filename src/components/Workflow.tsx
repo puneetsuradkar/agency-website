@@ -19,7 +19,7 @@ const Workflow = () => {
             The Operational Protocol
           </div>
           <h2 className="text-4xl md:text-7xl font-black font-heading text-white tracking-tighter leading-[1.0] uppercase max-w-5xl">
-            How Integrated <br /><span className="text-white/20">Success</span> Works.
+            How Integrated <br /><span className="text-white">Success</span> Works.
           </h2>
         </div>
 
@@ -38,10 +38,10 @@ const Workflow = () => {
             >
               <div className="w-16 h-16 rounded-2xl bg-black border border-white/10 flex items-center justify-center text-primary group-hover:border-primary/50 group-hover:bg-primary/5 transition-all duration-700 mb-8 z-10 bg-black">
                 <step.icon size={24} strokeWidth={1} />
-                <span className="absolute -top-3 -right-3 text-[10px] font-black text-slate-700 bg-black px-2 group-hover:text-primary transition-colors">{step.id}</span>
+                <span className="absolute -top-3 -right-3 text-[10px] font-black text-white bg-black px-2 group-hover:text-primary transition-colors">{step.id}</span>
               </div>
               <h4 className="text-sm font-black text-white uppercase tracking-[0.2em] mb-4 group-hover:text-primary transition-colors">{step.title}</h4>
-              <p className="text-[10px] text-slate-500 font-bold uppercase tracking-widest leading-relaxed max-w-[160px]">
+              <p className="text-[10px] text-white font-bold uppercase tracking-widest leading-relaxed max-w-[160px]">
                 {step.desc}
               </p>
             </motion.div>

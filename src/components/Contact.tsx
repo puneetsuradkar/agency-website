@@ -17,10 +17,10 @@ const Contact = () => {
               </div>
               <h2 className="text-4xl md:text-7xl font-black font-heading text-white tracking-tighter leading-[1.0] uppercase">
                 Want to Reduce <br />
-                <span className="text-white/20">Workload &</span> <br />
+                <span className="text-white">Workload &</span> <br />
                 Increase Placements?
               </h2>
-              <p className="text-slate-500 text-lg md:text-xl leading-relaxed italic font-medium">
+              <p className="text-white text-lg md:text-xl leading-relaxed italic font-medium">
                 "Book a free discovery call and see how automation can transform your recruitment process."
               </p>
             </div>
@@ -32,13 +32,13 @@ const Contact = () => {
                 </div>
                 <div className="space-y-1">
                   <h4 className="text-sm font-black text-white uppercase tracking-widest leading-tight">Short Alignment Call</h4>
-                  <p className="text-[10px] text-slate-500 font-bold uppercase tracking-widest">30 Minutes Discovery Protocol</p>
+                  <p className="text-[10px] text-white font-bold uppercase tracking-widest">30 Minutes Discovery Protocol</p>
                 </div>
               </div>
               <ArrowRight size={24} className="text-primary group-hover:translate-x-2 transition-transform" />
             </div>
             
-            <p className="text-[9px] font-black text-slate-700 uppercase tracking-[0.4em] pt-8 border-t border-white/5">
+            <p className="text-[9px] font-black text-white uppercase tracking-[0.4em] pt-8 border-t border-white/5">
               Secure Architecture Protocol Enabled.
             </p>
           </div>
@@ -51,16 +51,16 @@ const Contact = () => {
             <div className="glass-card p-10 md:p-14 border border-white/10 bg-black shadow-[0_45px_100px_-20px_rgba(0,0,0,0.8)]">
               <div className="mb-10 text-center md:text-left">
                 <h3 className="text-3xl font-black text-white mb-2 font-heading tracking-tight uppercase">Discovery Console</h3>
-                <p className="text-[10px] text-slate-600 font-black uppercase tracking-[0.3em]">Initialize Operational Request</p>
+                <p className="text-[10px] text-white font-black uppercase tracking-[0.3em]">Initialize Operational Request</p>
               </div>
 
               <div className="bg-white/5 rounded-2xl border border-white/10 p-1 bg-black overflow-hidden mb-10">
-                <div className="aspect-video flex items-center justify-center text-slate-800 text-center px-10">
+                <div className="aspect-video flex items-center justify-center text-white text-center px-10">
                   <div className="space-y-4">
                     <Calendar size={48} strokeWidth={1} className="mx-auto text-primary" />
                     <p className="text-[10px] font-black uppercase tracking-[0.3em] leading-relaxed">
                       Calendly Integration Module <br />
-                      <span className="text-slate-500 text-[8px] italic">Inject production scheduling script here</span>
+                      <span className="text-white text-[8px] italic">Inject production scheduling script here</span>
                     </p>
                   </div>
                 </div>

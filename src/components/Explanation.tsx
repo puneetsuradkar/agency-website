@@ -23,9 +23,9 @@ const Explanation = () => {
               </div>
               <h2 className="text-4xl md:text-6xl font-black font-heading text-white tracking-tighter leading-[1.0] mb-8 uppercase">
                 What exactly is <br />
-                <span className="text-white/20">AI Logic?</span>
+                <span className="text-white">AI Logic?</span>
               </h2>
-              <p className="text-lg text-slate-500 leading-relaxed max-w-xl font-medium italic">
+              <p className="text-lg text-white leading-relaxed max-w-xl font-medium italic">
                 "Autonomous agents don't just follow instructions—they internalize goals and orchestrate their own path to completion."
               </p>
             </div>
@@ -35,7 +35,7 @@ const Explanation = () => {
                 <Target size={14} className="text-white" />
                 <span className="text-[10px] font-black text-white uppercase tracking-widest">Our Methodology</span>
               </div>
-              <p className="text-xs md:text-sm text-slate-500 leading-relaxed font-medium">
+              <p className="text-xs md:text-sm text-white leading-relaxed font-medium">
                 We don't build simple chatbots. We architect <span className="text-white">autonomous digital employees</span>. Our agency analyzes your manual bottlenecks and deploys agents that think, read, and act across your entire software stack 24/7.
               </p>
             </div>
@@ -62,10 +62,10 @@ const Explanation = () => {
                 <div className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center group-hover:scale-110 transition-transform duration-500 border border-white/20">
                   <Brain size={24} className="text-white" />
                 </div>
-                <div className="text-[8px] font-black text-slate-500 uppercase tracking-widest">Cognitive Processing</div>
+                <div className="text-[8px] font-black text-white uppercase tracking-widest">Cognitive Processing</div>
               </div>
               <h3 className="text-xl font-black text-white mb-4 tracking-tight uppercase group-hover:text-slate-300">Cognitive Logic Engine</h3>
-              <p className="text-xs text-slate-500 leading-relaxed font-medium">
+              <p className="text-xs text-white leading-relaxed font-medium">
                 Our agents use large language models to understand nuance, read context, and make high-stakes logical decisions without human oversight.
               </p>
             </div>
@@ -75,7 +75,7 @@ const Explanation = () => {
                 <Blocks size={20} className="text-cyan-400" />
               </div>
               <h4 className="text-sm font-black text-white mb-3 uppercase tracking-tighter">Stack Sync</h4>
-              <p className="text-[10px] text-slate-600 leading-relaxed font-bold">
+              <p className="text-[10px] text-white leading-relaxed font-bold">
                 Direct integration with your native CRM, Email, and Database ecosystems.
               </p>
             </div>
@@ -85,7 +85,7 @@ const Explanation = () => {
                 <Zap size={20} className="text-green-400" />
               </div>
               <h4 className="text-sm font-black text-white mb-3 uppercase tracking-tighter">Instant Execution</h4>
-              <p className="text-[10px] text-slate-600 leading-relaxed font-bold">
+              <p className="text-[10px] text-white leading-relaxed font-bold">
                 Triggers initiate massive complex sequences in milliseconds.
               </p>
             </div>

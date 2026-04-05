@@ -51,12 +51,12 @@ const Hero = () => {
               className="text-4xl md:text-7xl lg:text-8xl font-black leading-[1.0] font-heading tracking-tight text-white uppercase"
             >
               Reduce Recruiter Workload by <br />
-              <span className="text-primary italic">40–60%</span> Using <span className="text-white/20">AI Workflow Automation.</span>
+              <span className="text-primary italic">40–60%</span> Using <span className="text-white">AI Workflow Automation.</span>
             </motion.h1>
           </div>
           
           <div className="flex flex-col items-center gap-12 max-w-3xl">
-            <motion.p variants={itemVariants} className="text-lg md:text-xl text-slate-400 leading-relaxed font-medium">
+            <motion.p variants={itemVariants} className="text-lg md:text-xl text-white leading-relaxed font-medium">
               We help recruitment agencies eliminate repetitive tasks like resume screening, sourcing, outreach, and interview coordination — <span className="text-white font-bold">so your recruiters can focus on placements and revenue.</span>
             </motion.p>
 
@@ -90,7 +90,7 @@ const Hero = () => {
             ].map((stat, i) => (
               <div key={i} className="flex flex-col items-center">
                 <span className="text-2xl md:text-4xl font-black text-white tracking-tighter mb-1">{stat.val}</span>
-                <span className="text-[9px] text-slate-600 font-bold uppercase tracking-widest">{stat.label}</span>
+                <span className="text-[9px] text-white font-bold uppercase tracking-widest">{stat.label}</span>
               </div>
             ))}
           </motion.div>

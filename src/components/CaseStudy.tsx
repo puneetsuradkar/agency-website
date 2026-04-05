@@ -13,7 +13,7 @@ const CaseStudy = () => {
             Verified Performance Outcome
           </div>
           <h2 className="text-4xl md:text-7xl font-black font-heading text-white tracking-tighter leading-[1.0] uppercase max-w-5xl">
-            Empirical Results. <br /><span className="text-white/20">The Deployment</span> Case Study.
+            Empirical Results. <br /><span className="text-white">The Deployment</span> Case Study.
           </h2>
         </div>
 
@@ -29,7 +29,7 @@ const CaseStudy = () => {
               <h3 className="text-2xl md:text-4xl font-black text-white uppercase tracking-tighter leading-tight">
                 Recruitment Agency <br />(5 Recruiters / Headcount)
               </h3>
-              <p className="text-slate-500 text-lg md:text-xl font-medium italic italic">
+              <p className="text-white text-lg md:text-xl font-medium italic italic">
                 "Spent ~3 hours per role on resume screening manually before integration."
               </p>
             </div>
@@ -37,11 +37,11 @@ const CaseStudy = () => {
             <div className="grid grid-cols-2 gap-6">
               <div className="p-6 bg-white/5 border border-white/10 rounded-2xl group hover:border-primary/40 transition-colors">
                 <span className="text-4xl font-black text-primary block mb-1">70%</span>
-                <span className="text-[10px] text-slate-500 font-bold uppercase tracking-widest">Time Reduction</span>
+                <span className="text-[10px] text-white font-bold uppercase tracking-widest">Time Reduction</span>
               </div>
               <div className="p-6 bg-white/5 border border-white/10 rounded-2xl group hover:border-primary/40 transition-colors">
                 <span className="text-4xl font-black text-primary block mb-1">15h+</span>
-                <span className="text-[10px] text-slate-500 font-bold uppercase tracking-widest">Weekly Savings</span>
+                <span className="text-[10px] text-white font-bold uppercase tracking-widest">Weekly Savings</span>
               </div>
             </div>
             
@@ -63,7 +63,7 @@ const CaseStudy = () => {
                 <div className="w-10 h-10 rounded-full bg-slate-900 border border-white/10" />
                 <div className="flex flex-col">
                   <span className="text-[10px] font-black text-white uppercase tracking-widest">Managing Director</span>
-                  <span className="text-[8px] font-bold text-slate-700 uppercase tracking-widest italic font-bold italic font-medium italic tracking-[0.2em]">Partner Agency</span>
+                  <span className="text-[8px] font-bold text-white uppercase tracking-widest italic font-bold italic font-medium italic tracking-[0.2em]">Partner Agency</span>
                 </div>
               </div>
             </div>

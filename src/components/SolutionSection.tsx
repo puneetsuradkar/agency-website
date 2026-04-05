@@ -21,9 +21,9 @@ const SolutionSection = () => {
             The High-Performance Solution
           </div>
           <h2 className="text-4xl md:text-7xl font-black font-heading text-white tracking-tighter leading-[1.0] uppercase max-w-5xl">
-            We Turn Your Recruitment Process <br /><span className="text-white/20">Into An</span> Automated System.
+            We Turn Your Recruitment Process <br /><span className="text-white">Into An</span> Automated System.
           </h2>
-          <p className="text-slate-500 text-lg md:text-xl max-w-2xl leading-relaxed font-medium italic">
+          <p className="text-white text-lg md:text-xl max-w-2xl leading-relaxed font-medium italic">
             "Analyze → Implement → Scale. We build the architecture that grows your agency without the headcount overhead."
           </p>
         </div>
@@ -42,7 +42,7 @@ const SolutionSection = () => {
                 <sol.icon size={24} strokeWidth={1} />
               </div>
               <h3 className="text-xl font-black text-white mb-4 uppercase tracking-tighter leading-tight">{sol.title}</h3>
-              <p className="text-[10px] text-slate-500 font-bold uppercase tracking-widest leading-relaxed">
+              <p className="text-[10px] text-white font-bold uppercase tracking-widest leading-relaxed">
                 {sol.desc}
               </p>
             </motion.div>

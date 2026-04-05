@@ -38,9 +38,9 @@ const Capabilities = () => {
             Workforce Modules
           </div>
           <h2 className="text-4xl md:text-7xl font-black font-heading text-white tracking-tighter leading-[1.0] max-w-4xl uppercase">
-            Engineered <br /><span className="text-white/20">Impact.</span>
+            Engineered <br /><span className="text-white">Impact.</span>
           </h2>
-          <p className="text-slate-500 text-lg md:text-xl max-w-2xl leading-relaxed font-medium italic">
+          <p className="text-white text-lg md:text-xl max-w-2xl leading-relaxed font-medium italic">
             "Deploy specialized digital employees designed for pure operational performance and logical precision."
           </p>
         </div>
@@ -56,8 +56,8 @@ const Capabilities = () => {
               className="glass-card p-10 border border-white/10 group hover:border-white/40 transition-all duration-700 bg-white/[0.01] flex flex-col items-center text-center overflow-hidden"
             >
               <div className="flex justify-between items-center w-full mb-10">
-                <div className="text-[8px] font-black text-slate-500 uppercase tracking-[0.3em] bg-white/[0.02] px-3 py-1.5 rounded-lg border border-white/5">{c.tag}</div>
-                <div className="w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-slate-500 group-hover:text-white transition-colors">
+                <div className="text-[8px] font-black text-white uppercase tracking-[0.3em] bg-white/[0.02] px-3 py-1.5 rounded-lg border border-white/5">{c.tag}</div>
+                <div className="w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-white group-hover:text-white transition-colors">
                   <Bot size={16} strokeWidth={1} />
                 </div>
               </div>
@@ -71,13 +71,13 @@ const Capabilities = () => {
                 <span className="text-[10px] font-black uppercase tracking-[0.2em]">{c.target}</span>
               </div>
 
-              <p className="text-slate-500 text-sm leading-relaxed mb-10 font-medium max-w-[250px] italic">
+              <p className="text-white text-sm leading-relaxed mb-10 font-medium max-w-[250px] italic">
                 "{c.description}"
               </p>
 
               <div className="flex flex-wrap justify-center gap-3 pt-8 border-t border-white/5 w-full mt-auto">
                 {c.impact.map((m, k) => (
-                  <span key={k} className="text-[9px] font-black text-slate-700 uppercase tracking-[0.3em] flex items-center gap-2">
+                  <span key={k} className="text-[9px] font-black text-white uppercase tracking-[0.3em] flex items-center gap-2">
                     <Activity size={10} className="text-white opacity-20" /> {m}
                   </span>
                 ))}
